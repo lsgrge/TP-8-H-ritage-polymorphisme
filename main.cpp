@@ -1,15 +1,23 @@
 #include <iostream>
 #include "robot.h"
 #include "teleporteur.h"
+#include "rapide.h"
+#include "traceur.h"
 
 void testRobot();
 
 
 int main()
 {
-  Robot x{'A'};
-  x.avancer(3);
-  x.montrer();
+  testRobot();
+  std::cout << std::endl;
+
+  RobotTraceur s{'D', '.'};
+  for(int i= 0; i<8; i++)
+  {
+    s.montrer();
+    s.avancer(1);
+  }
 
 
   return 0;

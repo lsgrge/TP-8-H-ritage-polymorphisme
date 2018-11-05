@@ -15,9 +15,9 @@ void Robot::avancer(int distance)
 
 void Robot::montrer()
 {
-  for(int i = 0; i<m_position; i++)
-  {
-      std::cout << std::string(m_position*i, ' ') << m_aspect << std::endl;
-  }
+  //for(int i = 0; i<m_position; i++)
+  //{ *i
+      std::cout << std::string(m_position, ' ') << m_aspect << std::endl;
+  //}
 
 }

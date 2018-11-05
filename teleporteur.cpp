@@ -7,7 +7,7 @@ RobotTeleporteur::RobotTeleporteur(char aspect) : Robot{aspect}
 {}
 
 
-void RobotTeleporteur::teleporter()
+void RobotTeleporteur::teleporter(int position)
 {
-  //m_position 
+  m_position = position;
 }

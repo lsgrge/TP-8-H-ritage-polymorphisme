@@ -1,3 +1,3 @@
 all:
-	g++ main.cpp robot.cpp -o exe
+	g++ main.cpp robot.cpp teleporteur.cpp rapide.cpp traceur.cpp -o exe
 	./exe
