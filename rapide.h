@@ -9,7 +9,7 @@ class RobotRapide : public Robot
 {
   public :
     RobotRapide(char aspect);
-    void avancer(int distance);
+    void avancer(double distance);
 
 };
 

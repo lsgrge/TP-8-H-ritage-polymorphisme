@@ -9,13 +9,13 @@ class Robot{
   public :
     Robot(char aspect);
     ~Robot();
-    void avancer(int distance);
+    void avancer(double distance);
     void montrer();
 
 
   protected :
     char m_aspect;
-    int m_position;
+    double m_position;
 };
 
 

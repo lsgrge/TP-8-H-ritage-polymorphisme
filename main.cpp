@@ -9,26 +9,38 @@
 
 
 void testRobot();
+void testRobotTeleporteur();
+void testRobotRapide();
+void testRobotTraceur();
 void testRobotCarburant();
 void testRobotEscargot();
 
 int main()
 {
+  std::cout << "========= Tests directs =========\n";
   testRobot();
-  std::cout << std::endl;
-
-  RobotTraceur s{'D', '.'};
-  for(int i= 0; i<8; i++)
-  {
-    s.montrer();
-    s.avancer(1);
-  }
-  std::cout << std::endl;
-
+  testRobotTeleporteur();
+  testRobotRapide();
+  testRobotTraceur();
   testRobotCarburant();
-  std::cout << std::endl;
   testRobotEscargot();
 
+/*
+  std::cout << "========= Tests polymorphisme =========\n";
+  Robot a{'A'};
+  RobotTeleporteur b{'B'};
+  RobotRapide c{'C'};
+  RobotTraceur d{'D', '.'};
+  RobotCarburant e{'E', '-', 5};
+  RobotEscargot f{};
+  testRobotPolymorphe(a);
+  testRobotPolymorphe(b);
+  testRobotPolymorphe(c);
+  testRobotPolymorphe(d);
+  testRobotPolymorphe(e);
+  testRobotPolymorphe(f);
+
+*/
   return 0;
 }
 
@@ -42,6 +54,37 @@ void testRobot()
   }
 }
 
+void testRobotTeleporteur()
+{
+  RobotTeleporteur x{'B'};
+  for (int i=0; i<8; ++i)
+  {
+    x.montrer();
+    x.avancer(1);
+  if (i==3)
+    x.teleporter(8);
+  }
+}
+
+void testRobotRapide()
+{
+  RobotRapide x{'C'};
+  for (int i=0; i<8; ++i)
+  {
+    x.montrer();
+    x.avancer(1);
+  }
+}
+
+void testRobotTraceur()
+{
+  RobotTraceur x{'D', '.'};
+  for (int i=0; i<8; ++i)
+  {
+    x.montrer();
+    x.avancer(1);
+  }
+}
 void testRobotCarburant()
 {
   RobotCarburant x{'E', '-', 5};

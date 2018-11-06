@@ -8,7 +8,7 @@ class RobotTeleporteur : public Robot
 {
   public :
     RobotTeleporteur(char aspect);
-    void teleporter(int position);
+    void teleporter(double position);
 };
 
 
