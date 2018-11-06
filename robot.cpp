@@ -4,7 +4,7 @@
 Robot::Robot(char aspect) : m_aspect{aspect}, m_position{0}
 {}
 
-Robot::~Robot(){}
+//Robot::~Robot(){}
 
 
 void Robot::avancer(double distance)

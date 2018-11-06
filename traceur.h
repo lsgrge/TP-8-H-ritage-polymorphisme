@@ -8,7 +8,7 @@ class RobotTraceur : public Robot
 {
   public :
     RobotTraceur(char aspect, char trace);
-    void montrer();
+    virtual void montrer();
   protected :
     char m_trace;
 };

@@ -10,7 +10,7 @@ class RobotCarburant : public RobotTraceur
 {
   public :
     RobotCarburant(char aspect, char trace, int carbu);
-    void avancer(double distance);
+    virtual void avancer(double distance);
   protected :
     int m_carburant;
 };

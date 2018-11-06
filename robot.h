@@ -8,10 +8,10 @@
 class Robot{
   public :
     Robot(char aspect);
-    ~Robot();
-    void avancer(double distance);
-    void montrer();
+    virtual void avancer(double distance);
+    virtual void montrer();
 
+    virtual ~Robot() = default;
 
   protected :
     char m_aspect;

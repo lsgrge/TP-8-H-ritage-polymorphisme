@@ -10,8 +10,7 @@ class RobotEscargot : public RobotTraceur
 {
   public :
     RobotEscargot();
-    void avancer(double distance);
-    //void montrer();
+    virtual void avancer(double distance);
 };
 
 

@@ -5,7 +5,7 @@
 #include "traceur.h"
 #include "carburant.h"
 #include "escargot.h"
-
+#include "polymorphe.h"
 
 
 void testRobot();
@@ -17,7 +17,7 @@ void testRobotEscargot();
 
 int main()
 {
-  std::cout << "========= Tests directs =========\n";
+  std::cout << "========= Tests directs =========\n\n";
   testRobot();
   testRobotTeleporteur();
   testRobotRapide();
@@ -25,8 +25,8 @@ int main()
   testRobotCarburant();
   testRobotEscargot();
 
-/*
-  std::cout << "========= Tests polymorphisme =========\n";
+
+  std::cout << "\n\n========= Tests polymorphisme =========\n\n";
   Robot a{'A'};
   RobotTeleporteur b{'B'};
   RobotRapide c{'C'};
@@ -40,7 +40,10 @@ int main()
   testRobotPolymorphe(e);
   testRobotPolymorphe(f);
 
-*/
+
+  std::cout << "\n\n========= Conteneur polymorphe =========\n\n";
+  testConteneurPolymorphe();
+
   return 0;
 }
 
