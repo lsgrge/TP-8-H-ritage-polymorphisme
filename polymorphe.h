@@ -12,8 +12,8 @@
 
 void testRobotPolymorphe(Robot& r);
 void testConteneurPolymorphe();
-void remplirConteneurPolymorphe(std::list<Robot*> bots);
-void utiliserConteneurPolymorphe(std::list<Robot*> bots);
-void viderConteneurPolymorphe(std::list<Robot*> bots);
+void remplirConteneurPolymorphe(std::list<Robot*>& bots);
+void utiliserConteneurPolymorphe(std::list<Robot*>& bots);
+void viderConteneurPolymorphe(std::list<Robot*>& bots);
 
 #endif
